@@ -1,0 +1,10 @@
+/* CSS styling for "Chart.js" (i.e., the `<Chart>` component): */
+.chart {
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #c7e3fc;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    height: 10rem;
+  }

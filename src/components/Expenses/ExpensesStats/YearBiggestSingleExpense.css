@@ -1,0 +1,31 @@
+/* CSS styling for "YearBiggestSingleExpense.js" (i.e., the `<YearBiggest-
+SingleExpense />` component): */
+.year-biggest-single-expense {
+    background-color: #1d5464;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: center;
+    width: 33%;
+}
+
+.year-biggest-single-expense h4 {
+    margin-top: .5rem;
+    margin-bottom: .125rem;
+}
+  
+.year-biggest-single-expense h5 {
+    margin-top: .125rem;
+    margin-bottom: .5rem;
+    font-weight: normal;
+}
+
+.horizontal-line {
+    width: 85%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border: 1px solid #fbfbfb;
+}

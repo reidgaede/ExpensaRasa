@@ -1,0 +1,10 @@
+/* CSS styling for "ExpensesList.js" (i.e., the `<ExpensesList />` component): */
+.expenses-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .expenses-list__fallback {
+    color: white;
+    text-align: center;
+  }

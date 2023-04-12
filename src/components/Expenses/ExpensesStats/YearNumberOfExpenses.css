@@ -1,0 +1,34 @@
+/* CSS styling for "YearNumberOfExpenses.js" (i.e., the `<YearNumberOfExpenses />` 
+component): */
+.year-number-of-expenses {
+    background-color: #4792a9;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    text-align: center;
+    width: 33%;
+}
+
+.year-number-of-expenses h4 {
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    max-width: 70%;
+    padding-left: 1rem;
+    text-align: left;
+}
+
+.year-number-of-expenses h5 {
+    font-weight: normal;
+    margin: auto;
+    text-align: right;
+}
+
+.vertical-line {
+    height: 80%;
+    border-left: 2px solid white;
+    margin-left: 1.3rem;
+    margin-right: .2rem;
+    margin-top: .5em;
+}

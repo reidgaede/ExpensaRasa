@@ -1,0 +1,6 @@
+/* CSS styling for "ExpensesStats.js" (i.e., the `<ExpensesStats />` component): */
+.expense-stats-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: .3rem;
+}

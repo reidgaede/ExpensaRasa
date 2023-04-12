@@ -1,0 +1,41 @@
+/* CSS styling for "App.js" (i.e., the `<App />` component): */
+
+/* "Final" styling for "packaging"/presentation purposes for front-end: */
+.site-title {
+    color: azure;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Styling for "subtitle" section on front-end describing use and worth of 
+"ExpensaRasa": */
+.site-subtitle {
+    color: white;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+/* Ensuring that font color of hyperlink towards top of "subtitle" section 
+on front-end remains white even after user click: */
+.site-subtitle a {
+    color: white;
+}
+
+/* Styling for `<ul>` element in "subtitle" section on front-end: */
+.expensa-rasa-bullets {
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: left;
+}
+
+/* Styling for "disclaimer" at bottom of front-end: */
+.viewport-width-disclaimer {
+    color: white;
+    font-size: 1rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}

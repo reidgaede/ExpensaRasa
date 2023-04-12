@@ -1,0 +1,31 @@
+/* CSS styling for "TopExpenseCategory.js" (i.e., the `<TopExpenseCategory />` 
+component): */
+.top-expense-category {
+    background-color: #387486;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: center;
+    width: 33%;
+}
+
+.top-expense-category h4 {
+    margin-top: .5rem;
+    margin-bottom: .125rem;
+}
+  
+.top-expense-category h5 {
+    margin-top: .125rem;
+    margin-bottom: .5rem;
+    font-weight: normal;
+}
+
+.horizontal-line {
+    width: 85%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border: 1px solid #fbfbfb;
+}

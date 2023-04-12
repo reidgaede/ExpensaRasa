@@ -1,0 +1,49 @@
+/* CSS styling for "ExpenseForm.js" (i.e., the `<ExpenseForm>` component): */
+.new-expense__controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  /* Explicit reference to "new-expense__control" class ensures that all elements in 
+  "ExpenseForm.js" to whom `className` value of "new-expense__control" are passed are 
+  horizontally centered on app's front-end: */
+  .new-expense__control {
+    margin: auto;
+  }
+  
+  .new-expense__control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .new-expense__control input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+  }
+
+  .new-expense__control select {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+  }
+  
+  .new-expense__actions {
+    text-align: center;
+  }
+
+  #new-expense__cancel-button {
+    /* (4/4/23) Guaranteeing spacing between "Cancel" and "Add Expense" buttons: */
+    margin-right: 1rem;
+    width: 160.88px;
+  }
