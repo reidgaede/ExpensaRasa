@@ -12,8 +12,9 @@ component): */
 }
 
 .year-number-of-expenses h4 {
-    margin-top: .75rem;
-    margin-bottom: .75rem;
+    /* Specifying `margin: auto 0;` to better ensure that "Number of Expenses in 
+    Calendar Year" text is better-centered on vertical axis: */
+    margin: auto 0;
     max-width: 70%;
     padding-left: 1rem;
     text-align: left;
@@ -31,4 +32,24 @@ component): */
     margin-left: 1.3rem;
     margin-right: .2rem;
     margin-top: .5em;
+}
+
+/* Media query that executes styling changes when width of user's screen is at or 
+below 600 pixels: */
+@media (max-width: 600px) {
+    .year-number-of-expenses h4 {
+        padding: 0 5px;
+        font-size: 10px;
+    }
+
+    .vertical-line {
+        height: 85%;
+        margin-left: .25rem;
+        margin-right: .2rem;
+        margin-top: .5em;
+    }
+
+    .year-number-of-expenses h5 {
+        font-size: 8px;
+    }
 }

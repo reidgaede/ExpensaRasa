@@ -46,8 +46,8 @@
   }
   
   /* CSS styling specified below only applies if screen/browser window width is 
-  greater than 580px: */
-  @media (min-width: 580px) {
+  greater than 600px: */
+  @media (min-width: 600px) {
     .expense-item__description {
       flex-direction: row;
       align-items: flex-start;
@@ -57,6 +57,10 @@
   
     .expense-item__description h2 {
       font-size: 1.25rem;
+      /* Ensuring that any ultra-long, single-string expense item names can be 
+      wrapped to prevent element overflow: */
+      width: 17.5rem;
+      overflow-wrap: break-word;
     }
 
     .expense-item__description h6 {
@@ -68,3 +72,62 @@
       padding: 0.5rem 1.5rem;
     }
   }
+
+/* Media query that executes styling changes when width of user's screen is at or 
+below 360 pixels: */
+@media (max-width: 360px) {
+  .expense-item h2 {
+    font-size: .75rem;
+    margin: 0 .5rem;
+    /* Ensuring that any ultra-long, single-string expense item names can be 
+    wrapped to prevent element overflow: */
+    width: 4.5rem;
+    overflow-wrap: break-word;
+  }
+
+  .expense-item h6 {
+    font-size: 8px;
+    margin: 0 .5rem;
+  }
+
+  .expense-item__price {
+    font-size: 12px;
+    padding: 0.5rem .5rem;
+  }
+}
+
+/* Media query that executes styling changes when width of user's screen is at or 
+above 360 pixels and at or below 600px: */
+@media (min-width: 360px) and (max-width: 600px) {
+  .expense-item h2 {
+    font-size: .75rem;
+    margin: 0 .5rem;
+    /* Ensuring that any ultra-long, single-string expense item names can be 
+    wrapped to prevent element overflow: */
+    width: 9rem;
+    overflow-wrap: break-word;
+  }
+
+  .expense-item h6 {
+    font-size: 8px;
+    margin: 0 .5rem;
+    color: white;
+  }
+  
+  .expense-item__price {
+    font-size: 12px;
+    padding: 0.5rem .5rem;
+  }
+}
+
+/* Media query that executes styling changes when width of user's screen is at or 
+above 768 pixels: */
+@media (min-width: 768px) {
+  .expense-item__description h2 {
+    font-size: 1.25rem;
+    /* Ensuring that any ultra-long, single-string expense item names can be 
+    wrapped to prevent element overflow: */
+    width: 22.5rem;
+    overflow-wrap: break-word;
+  }
+}

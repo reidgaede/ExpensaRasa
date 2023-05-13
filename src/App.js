@@ -34,8 +34,8 @@ function App() {
       <h1 className="site-title">ExpensaRasa</h1>
       <div className="site-subtitle">
         <h4>Your personal <i><a href="https://en.wikipedia.org/wiki/Tabula_rasa" 
-        target="_blank">blank slate</a></i>, purpose-hewn for quick, convenient, and 
-        private expense logging and analysis:</h4>
+        target="_blank" rel="noreferrer">blank slate</a></i>, purpose-hewn for quick, convenient, 
+        and private expense logging and analysis:</h4>
         <ul className="expensa-rasa-bullets">
           <li>Add your expense items,</li>
           <li>Filter your expenses by the year in which they were incurred,</li>
@@ -50,9 +50,6 @@ function App() {
       </div>
       <NewExpense onAddExpense={addExpenseHandler}/>
       <Expenses expenses={expenses}/>
-      <p className="viewport-width-disclaimer">ExpensaRasa is currently designed for use on 
-      desktop computers and tablets only. For optimized use experience, please maintain a 
-      browser window width of at least 550px while engaging with ExpensaRasa.</p>
     </div>
   );
 };

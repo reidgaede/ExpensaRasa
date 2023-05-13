@@ -27,9 +27,9 @@ const YearBiggestSingleExpense = (props) => {
             </div>
         )
     }else{
-        {/* Note usage of "spread" operator to obtain values from "expenseAmountArray" so 
+        /* Note usage of "spread" operator to obtain values from "expenseAmountArray" so 
         that those individual values - rather than "expenseAmountArray" array itself - are 
-        passed as arguments to `.max()`: */}
+        passed as arguments to `.max()`: */
         const yearLargestExpenseAmount = Math.max(...expenseAmountArray);
 
         let yearLargestExpense = "";

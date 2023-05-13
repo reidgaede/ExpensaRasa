@@ -36,3 +36,12 @@
   .new-expense button.alternative:active {
     background-color: #ddb3f8;
   }
+
+/* Media query that executes styling changes when width of user's screen is at or 
+below 600 pixels: */
+@media (max-width: 600px) {
+  .new-expense button {
+    font-size: 12px;
+    padding: .5rem 1rem;
+  }
+}

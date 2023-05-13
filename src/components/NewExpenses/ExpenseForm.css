@@ -39,7 +39,11 @@
   }
   
   .new-expense__actions {
-    text-align: center;
+    /* text-align: center; */
+    /* Opted to transition to using `justify-content: space-evenly;` to better-space 
+    "Cancel" and "Add Expense" buttons: */
+    display: flex;
+    justify-content: space-evenly;
   }
 
   #new-expense__cancel-button {
@@ -47,3 +51,36 @@
     margin-right: 1rem;
     width: 160.88px;
   }
+
+/* Media query that executes styling changes when width of user's screen is at or 
+below 600 pixels: */
+@media (max-width: 600px) {
+  .new-expense__actions {
+    display: flex;
+  }
+
+  .new-expense__controls {
+    gap: .5rem;
+  }
+  
+  .new-expense__control label {
+    width: 90%;
+    font-size: 11px;
+  }
+
+  .new-expense__control input {
+    width: 14rem;
+    padding: 2px;
+  }
+
+  .new-expense__control select {
+    width: 14rem;
+    padding: 2px;
+  }
+
+  #new-expense__cancel-button {
+    font-size: 12px;
+    margin-right: 0rem;
+    width: 6.5rem;
+  }
+}

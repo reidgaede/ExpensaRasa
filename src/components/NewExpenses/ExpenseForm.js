@@ -86,7 +86,9 @@ const ExpenseForm = (props) => {
         const expenseData = {
             title: enteredTitle,
             amount: +enteredAmount,
-            date: new Date(enteredDate),
+            /* Adding `.split('-')` in effort to prevent `Date` objects from having day values one 
+            less than that chosen/selected by user (i.e., "off-by-one" errors): */
+            date: new Date(enteredDate.split('-')),
             category: enteredCategory,
         };
 

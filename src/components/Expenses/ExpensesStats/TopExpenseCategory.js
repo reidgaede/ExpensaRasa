@@ -113,7 +113,9 @@ const TopExpenseCategory = (props) => {
                 topExpenseCategory = i.category;
             };
         };
-        console.log(topExpenseCategory);
+        /* Commented-out `console.log()` statement following this comment was originally used 
+        for testing purposes, but has been maintained as documentation: */
+        //console.log(topExpenseCategory);
 
         return (
             <div className="top-expense-category">

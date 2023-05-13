@@ -10,12 +10,13 @@ React-based interface for quick, convenient, and private expense logging and ana
 
 To improve upon the expense tracker project's original design and augment my applied ReactJS experience gained to date, I have executed the following modifications to change this project into ExpensaRasa:
 - Overhauled, via nuanced changes to CSS styling, front-end color scheme from light/dark purple to light/dark blue;
+- Implemented CSS media queries that ensured, via responsive design, base-level continuity of user experience across more than a dozen unique screen dimensions;
 - Added and fully integrated new “Category” `<select>` element in `<ExpenseForm />` component that allows user to assign a high-level expense category to each expense they upload via ExpensaRasa’s front-end;
 - Amended “Title” `<input>` element in `<ExpenseForm />` component so that it only accepts textual input 40 characters or less in length;
 - Amended “Amount” `<input>` element in `<ExpenseForm />` component so that it only accepts numeric input less than or equal to 10,000,000;
 - Amended “unique ID” generation in `<NewExpense />` component to decrease odds of two (or more) expense items having identical values for `ID` property;
 - Reorganized HTML and CSS for `<ExpenseItem />` component so that every expense’s “expense category” would be listed beneath the expense’s name/title within any invocation of the `<ExpenseItem />` component;
-- Crafted and fully integrated new `<ExpenseStats />` component, which contains, (partially) styles, and passes data to invocations of self-designed `<TopExpenseCategory />`, `<YearBiggestSingleExpense />`, and `<YearNumberOfExpenses />` components;
+- Crafted and fully integrated new `<ExpenseStats />` component, which contains (partially) styles and passes data to invocations of self-designed `<TopExpenseCategory />`, `<YearBiggestSingleExpense />`, and `<YearNumberOfExpenses />` components;
   - Conceptualized, wrote, and fully integrated `<TopExpenseCategory />` component, which dynamically computes expense category for which the highest dollar quantity was incurred for a given year and outputs said information in stylized elements on project’s front-end;
   - Conceptualized, wrote, and fully integrated `<YearBiggestSingleExpense />` component, which dynamically computes and outputs the largest single expense incurred in a given filter year;
   - Conceptualized, wrote, and fully integrated `<YearNumberOfExpenses />` component, which dynamically outputs the number/count of expenses incurred in a given filter year; and
